@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bkupulscjsbi6"]
+
+[ext_resource type="Texture2D" uid="uid://d33fl87rbewmk" path="res://sprites/assign2sprites.png" id="1_xsq18"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cc37w"]
+size = Vector2(16, 16)
+
+[node name="1x1block" type="StaticBody2D" unique_id=1859238131]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100471411]
+texture = ExtResource("1_xsq18")
+hframes = 5
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=453441535]
+shape = SubResource("RectangleShape2D_cc37w")

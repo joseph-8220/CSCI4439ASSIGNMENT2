@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://wr2xpat8upha"]
+
+[ext_resource type="PackedScene" uid="uid://de3dari1qn3ng" path="res://scenes/area.tscn" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://bbgkovyx4l1oe" path="res://scripts/camera_2d.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://blrqyji61skmf" path="res://scenes/player.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://r2vu50in4jjw" path="res://scenes/enemy.tscn" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://si8td5tpfpk0" path="res://scripts/label.gd" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bp732bbia1oir" path="res://scenes/coin.tscn" id="5_lquwl"]
+
+[node name="main" type="Node2D" unique_id=2068618205]
+
+[node name="area" parent="." unique_id=1058963963 instance=ExtResource("2_1bvp3")]
+
+[node name="player" parent="." unique_id=1854821798 instance=ExtResource("3_lquwl")]
+position = Vector2(-232, 56)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=28249788]
+zoom = Vector2(3.5, 3.4)
+script = ExtResource("3_h2yge")
+
+[node name="Label" type="Label" parent="player/Camera2D" unique_id=1491074663]
+offset_left = -213.0
+offset_top = -118.0
+offset_right = -173.0
+offset_bottom = -95.0
+script = ExtResource("4_7mycd")
+
+[node name="coin" parent="." unique_id=604355338 instance=ExtResource("5_lquwl")]
+position = Vector2(-104, 5)
+
+[node name="enemy" parent="." unique_id=1589385116 instance=ExtResource("4_1bvp3")]
+position = Vector2(-24, 72)
+left_edge = -24
+right_edge = 24
+
+[node name="enemy2" parent="." unique_id=76716290 instance=ExtResource("4_1bvp3")]
+position = Vector2(56, 72)
+left_edge = 56
+right_edge = 200
+
+[node name="coin2" parent="." unique_id=1328069648 instance=ExtResource("5_lquwl")]
+position = Vector2(472, -56)
+
+[node name="enemy3" parent="." unique_id=1920392038 instance=ExtResource("4_1bvp3")]
+position = Vector2(808, 72)
+left_edge = 808
+right_edge = 968
+
+[node name="enemy4" parent="." unique_id=1408851262 instance=ExtResource("4_1bvp3")]
+position = Vector2(920, 40)
+left_edge = 888
+right_edge = 920
+
+[node name="enemy5" parent="." unique_id=1205161211 instance=ExtResource("4_1bvp3")]
+position = Vector2(1063, 41)
+left_edge = 1047
+right_edge = 1079
+
+[node name="enemy6" parent="." unique_id=2031965256 instance=ExtResource("4_1bvp3")]
+position = Vector2(1047, -24)
+speed = 75
+left_edge = 1047
+right_edge = 1079
+
+[node name="coin3" parent="." unique_id=1710401000 instance=ExtResource("5_lquwl")]
+position = Vector2(1046, -72)
+
+[node name="coin4" parent="." unique_id=1734491450 instance=ExtResource("5_lquwl")]
+position = Vector2(1304, -14)
+
+[node name="enemy7" parent="." unique_id=1387465707 instance=ExtResource("4_1bvp3")]
+position = Vector2(1256, 72)
+speed = 75
+left_edge = 1256
+right_edge = 1480
+
+[node name="coin5" parent="." unique_id=1203092244 instance=ExtResource("5_lquwl")]
+position = Vector2(1383, -68)
+
+[node name="coin6" parent="." unique_id=1023394297 instance=ExtResource("5_lquwl")]
+position = Vector2(1640, 68)

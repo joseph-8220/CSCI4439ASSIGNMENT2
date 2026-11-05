@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cw7dqkkq83d2o"]
+
+[ext_resource type="PackedScene" uid="uid://bkupulscjsbi6" path="res://scenes/1x1block.tscn" id="1_6juc8"]
+
+[node name="1x3block" type="StaticBody2D" unique_id=646672786]
+
+[node name="1x1block" parent="." unique_id=1859238131 instance=ExtResource("1_6juc8")]
+
+[node name="1x1block2" parent="." unique_id=1704404303 instance=ExtResource("1_6juc8")]
+position = Vector2(-16, 0)
+
+[node name="1x1block3" parent="." unique_id=408368289 instance=ExtResource("1_6juc8")]
+position = Vector2(16, 0)
